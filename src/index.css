@@ -1,4 +1,6 @@
 :root {
+  --primary-background-color: hsl(0, 0%, 90%);
+  --secondary-background-color: hsl(0, 0%, 100%);
   --font-primary-color: #161616;
   --font-secondary-color: white;
   --button-color-primary: #FF8C38;
@@ -19,12 +21,12 @@ body {
   width: 100vw;
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: var(--primary-background-color);
 }
 
 #root {
   height: 100%;
   width: 100%;
-  max-width: 1200px;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -66,6 +68,12 @@ body {
   &:last-of-type {
     margin-right: 0;
   }
+}
+
+main {
+  max-width: 1200px;
+  align-self: center;
+  background-color: var(--secondary-background-color);
 }
 
 main.home {
